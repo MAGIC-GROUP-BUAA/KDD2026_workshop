@@ -275,10 +275,17 @@ tr:hover td {
 
 .announcement h3 {
     color: #2e7d32;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-size: 1.8em;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.program-note {
+    margin: 0 0 20px;
+    color: #3f6f42;
+    font-size: 0.98em;
     text-align: center;
 }
 
@@ -311,6 +318,20 @@ tr:hover td {
 
 .announcement .session-content {
     flex: 1;
+}
+
+.announcement .talk-meta {
+    margin-top: 4px;
+    color: #333;
+}
+
+.announcement .talk-speaker {
+    font-weight: 600;
+}
+
+.announcement .talk-title {
+    color: #333;
+    font-style: italic;
 }
 
 .announcement ul ul {
@@ -399,8 +420,8 @@ tr:hover td {
     display: flex;
     align-items: center;
     gap: 14px;
-    flex: 1 1 30%; /* 允许伸缩，理想宽度约为 30% */
-    min-width: 220px;
+    flex: 1 1 calc(50% - 18px);
+    min-width: 320px;
     box-sizing: border-box;
     transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
